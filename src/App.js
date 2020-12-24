@@ -1,23 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import Image from "react-bootstrap/Image";
+
+const GIF_URL =
+  "https://media4.giphy.com/media/l4JzhRSnaIsShvsxW/giphy.gif?cid=6638e90dap2xpbs4yvx0jo9bx2bdvloricr1h7qyxzc5tm3r&rid=giphy.gif";
 
 function App() {
+  const [modalVisible, setModalVisible] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <section className="section-event">
+        <h1>Event</h1>
+        <Button onClick={() => setModalVisible(true)}>Đồng ý</Button>
+      </section>
+      <Modal
+        // size="lg"
+        centered
+        show={modalVisible}
+        onHide={() => setModalVisible(false)}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Thông báo</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <Image src={GIF_URL} className="modal-gif" />
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
