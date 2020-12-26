@@ -2,6 +2,12 @@
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  background-image: url("./background.jpg");
+  background-size: cover;
+}
+
+.text-event {
+  color: white;
 }
 
 .section-event {
@@ -10,6 +16,11 @@
   justify-content: space-around;
   align-items: center;
   flex: 1;
+}
+
+.app-modal-title {
+  flex: 1;
+  text-align: center;
 }
 
 .modal-gif {

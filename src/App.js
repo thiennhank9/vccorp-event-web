@@ -4,8 +4,7 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Image from "react-bootstrap/Image";
 
-const GIF_URL =
-  "https://media4.giphy.com/media/l4JzhRSnaIsShvsxW/giphy.gif?cid=6638e90dap2xpbs4yvx0jo9bx2bdvloricr1h7qyxzc5tm3r&rid=giphy.gif";
+const GIF_URL = "https://media.giphy.com/media/10kA08wzloZws/giphy.gif";
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
@@ -13,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <section className="section-event">
-        <h1>Event</h1>
+        <h1 className="text-event">Event</h1>
         <Button onClick={() => setModalVisible(true)}>Đồng ý</Button>
       </section>
       <Modal
@@ -22,8 +21,8 @@ function App() {
         show={modalVisible}
         onHide={() => setModalVisible(false)}
       >
-        <Modal.Header closeButton>
-          <Modal.Title>Thông báo</Modal.Title>
+        <Modal.Header>
+          <Modal.Title className="app-modal-title">Chúc mừng</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Image src={GIF_URL} className="modal-gif" />
