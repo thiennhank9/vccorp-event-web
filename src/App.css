@@ -2,7 +2,7 @@
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  background-image: url("./background.jpg");
+  background-image: url("./background.png");
   background-size: cover;
 }
 
