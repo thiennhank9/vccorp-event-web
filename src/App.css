@@ -2,12 +2,10 @@
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
-  background-image: url("./background.png");
+  background-image: url("./res/background.jpg");
+  background-position: center;
   background-size: cover;
-}
-
-.text-event {
-  color: white;
+  background-repeat: no-repeat;
 }
 
 .section-event {
