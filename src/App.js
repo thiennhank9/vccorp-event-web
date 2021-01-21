@@ -12,15 +12,12 @@ function App() {
   return (
     <div className="app">
       <section className="section-event">
-        <h1 className="text-event">Event</h1>
         <Button onClick={() => setModalVisible(true)}>Đồng ý</Button>
       </section>
       <Modal
-        // size="lg"
         centered
         show={modalVisible}
-        onHide={() => setModalVisible(false)}
-      >
+        onHide={() => setModalVisible(false)}>
         <Modal.Header>
           <Modal.Title className="app-modal-title">Chúc mừng</Modal.Title>
         </Modal.Header>
