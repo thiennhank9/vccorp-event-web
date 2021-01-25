@@ -1,7 +1,6 @@
 .app {
   min-width: 100vw;
   min-height: 100vh;
-  display: flex;
   background-image: url("./res/background.jpg");
   background-position: center;
   background-size: cover;
@@ -11,10 +10,20 @@
 .section-event {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   flex: 1;
+  position: absolute;
+  top: 25%;
 }
+
+.text-event {
+ color: white;
+ text-align: center;
+ font-family: AndesRoundedLight;
+ margin-left: 2rem;
+ margin-right: 2rem;
+}
+  
 
 .app-modal-title {
   flex: 1;
@@ -23,4 +32,58 @@
 
 .modal-gif {
   width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.35em 1.2em;
+  border: 0.1em solid #FFFFFF;
+  margin: 2.5em 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  background-color: transparent;
+  text-align: center;
+  top: 0;
+}
+
+.btn:hover {
+  color: #000000;
+  background-color: #030303;
+}
+
+.btn:focus{
+  background-color: transparent;
+  border-color: white;
+}
+
+.text-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+  padding: 0.7rem;
+  color: white;
+}
+
+.model-body {
+  display: flex;
+  align-items: top;
+  flex: 1;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+.model-backdrop .modal-content{
+  background-color: #3a3737;
+}
+
+
+@font-face {
+  font-family: AndesRoundedLight;
+  src: url(./font/AndesRoundedLight.ttf);
 }
