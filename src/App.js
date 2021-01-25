@@ -2,9 +2,6 @@ import "./App.css";
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import Image from "react-bootstrap/Image";
-
-const GIF_URL = "https://media.giphy.com/media/10kA08wzloZws/giphy.gif";
 
 function App() {
   const [modalVisible, setModalVisible] = useState(false);
