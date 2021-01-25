@@ -12,20 +12,16 @@ function App() {
   return (
     <div className="app">
       <section className="section-event">
-        <h1 className="text-event">Event</h1>
-        <Button onClick={() => setModalVisible(true)}>Đồng ý</Button>
+        <h2 className="text-event">Bạn có sẵn sàng đồng hành cùng VCCorp trong năm 2021?</h2>
+        <Button className="btn" onClick={() => setModalVisible(true)}>Sẵn sàng</Button>
       </section>
       <Modal
-        // size="lg"
+        dialogClassName="model-body"
+        className="model-backdrop "
         centered
-        show={modalVisible}
-        onHide={() => setModalVisible(false)}
-      >
-        <Modal.Header>
-          <Modal.Title className="app-modal-title">Chúc mừng</Modal.Title>
-        </Modal.Header>
+        show={modalVisible}>
         <Modal.Body>
-          <Image src={GIF_URL} className="modal-gif" />
+          <h6 className="text-thanks">Cảm ơn bạn!</h6>
         </Modal.Body>
       </Modal>
     </div>
