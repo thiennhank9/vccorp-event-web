@@ -1,29 +1,30 @@
 .app {
   min-width: 100vw;
   min-height: 100vh;
+  display: flex;
+}
+
+.image-background {
+  flex: 1;
   background-image: url("./res/background.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
 .section-event {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex: 1;
-  position: absolute;
-  top: 25%;
+  margin-top: 25vh;
+  font-size: 2rem;
 }
 
 .text-event {
- color: white;
- text-align: center;
- font-family: AndesRoundedLight;
- margin-left: 2rem;
- margin-right: 2rem;
+  color: white;
+  text-align: center;
+  font-family: AndesRoundedLight;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-  
 
 .app-modal-title {
   flex: 1;
@@ -37,17 +38,18 @@
 .btn {
   display: inline-block;
   padding: 0.35em 1.2em;
-  border: 0.1em solid #FFFFFF;
-  margin: 2.5em 0.3em 0.3em 0;
+  border: 0.1em solid #ffffff;
+  margin: 1.5em 0.3em 0.3em 0;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: 300;
   color: white;
   background-color: transparent;
   text-align: center;
   top: 0;
+  font-size: 2rem;
 }
 
 .btn:hover {
@@ -55,7 +57,7 @@
   background-color: #030303;
 }
 
-.btn:focus{
+.btn:focus {
   background-color: transparent;
   border-color: white;
 }
@@ -78,12 +80,21 @@
   margin-right: 3rem;
 }
 
-.model-backdrop .modal-content{
+.model-backdrop .modal-content {
   background-color: #3a3737;
 }
-
 
 @font-face {
   font-family: AndesRoundedLight;
   src: url(./font/AndesRoundedLight.ttf);
+}
+
+/* 576 for sm */
+@media only screen and (max-width: 575px) {
+  .text-event {
+    font-size: 1.5rem;
+  }
+  .btn {
+    font-size: 1.5rem;
+  }
 }

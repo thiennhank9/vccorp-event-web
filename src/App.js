@@ -8,10 +8,12 @@ function App() {
 
   return (
     <div className="app">
-      <section className="section-event">
-        <h2 className="text-event">Bạn có sẵn sàng đồng hành cùng VCCorp trong năm 2021?</h2>
-        <Button className="btn" onClick={() => setModalVisible(true)}>Sẵn sàng</Button>
-      </section>
+      <div className="image-background">
+        <section className="section-event">
+          <h2 className="text-event">Bạn có sẵn sàng đồng hành cùng VCCorp trong năm 2021?</h2>
+          <Button className="btn" onClick={() => setModalVisible(true)}>Sẵn sàng</Button>
+        </section>
+      </div>
       <Modal
         dialogClassName="model-body"
         className="model-backdrop "
