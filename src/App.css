@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 25vh;
+  margin-top: 24vh;
   font-size: 2rem;
 }
 
@@ -90,9 +90,9 @@
 /* 576 for sm */
 @media only screen and (max-width: 575px) {
   .text-event {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
   }
   .btn {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
 }
